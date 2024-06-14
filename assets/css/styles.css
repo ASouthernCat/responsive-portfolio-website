@@ -83,6 +83,10 @@ body.dark-theme {
 --scroll-thumb-color: hsl(var(--hue-color), 12%, 36%);
 }
 
+body {
+  transition: all 0.2s;
+}
+
 /*========== Button Dark/Light ==========*/
 .nav__btns {
   display: flex;
@@ -783,6 +787,8 @@ img {
 }
 
 .footer__links {
+  margin-left: 2rem;
+  white-space: nowrap;
   display: flex;
   flex-direction: column;
   row-gap: 1.5rem;
@@ -1140,10 +1146,10 @@ img {
       font-size: 3.5rem;
   }
   .swiper-button-prev {
-      left: 3.5rem;
+      left: -3.5rem;
   }
   .swiper-button-next {
-      right: 3.5rem;
+      right: -3.5rem;
   }
   .swiper-container-horizontal > .swiper-pagination-bullets {
       bottom: -4.5rem
